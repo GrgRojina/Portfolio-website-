@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    h1{
+        color:brown;
+        text-align: center;
+        font-size: 18px;
+    }
+    .form-div{
+        margin:5px;
+    }
+</style>
+<body>
+    <h1>Contact page</h1>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <div class="form-div">
+            <label for="name">Name</label>
+            <input type="text" name="name">
+        </div>
+        <div class="form-div">
+            <label for="email">Email</label>
+            <input type="email" name="email">
+        </div>
+        <div class="form-div">
+            <label for="subject">Subject</label>
+            <input type="texr" name="subject">
+        </div>        
+        <div class="form-div">
+            <label for="message">Message</label>
+            <textarea name="message" id=""></textarea>
+        </div>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

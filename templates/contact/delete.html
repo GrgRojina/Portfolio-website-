@@ -1,0 +1,10 @@
+{% extends "includes/base.html" %}
+{% block content %}
+
+<p>are sure yo want to delete</p>
+<form action ="" method ="Post">
+    {% csrf_token %}
+
+    <button class= "btn btn-dngr" type ="submit"></button>
+</form>
+{% endblock content %}

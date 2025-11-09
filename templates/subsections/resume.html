@@ -1,0 +1,29 @@
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Sumary</h3>
+            {% for resume in resume_details %}
+              <div class="resume-item">
+                <h4>{{resume.title}}</h4>
+                <h5>{{resume.start_year}} - {{resume.end_year}}</h5>
+                <p><em>{{resume.organization}}</em></p>
+                <p>{{resume.description}}</p>
+              </div><!-- Edn Resume Item -->
+            {% endfor %}
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    h1{
+        color:brown;
+        text-align: center;
+        font-size: 18px;
+    }
+    .form-div{
+        margin:5px;
+    }
+</style>
+<body>
+    <h1>Contact page 3</h1>
+    <form action="" method="post">
+    {% csrf_token %}
+    {{enquiry_form}}
+    <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

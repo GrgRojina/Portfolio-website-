@@ -1,0 +1,26 @@
+{% extends "includes/base.html" %}
+{% load static %}
+{% include "includes/header.html" %}
+<body class="index-page">
+{% include 'includes/sidebar.html' %}
+
+  <main class="main">
+
+    {% block content %}
+      {% include 'subsections/hero.html' %}
+
+      {% include 'subsections/about.html' %}
+      {% include 'subsections/stats.html' %}
+      {% include 'subsections/skills.html' %}
+      {% include 'subsections/resume.html' %}
+      {% include 'subsections/portfolio.html' %}
+      {% include 'subsections/services.html' %}
+      {% include 'subsections/contact.html' %}
+
+    {% endblock content %}
+  </main>
+
+  {% include 'includes/footer.html' %}
+</body>
+
+</html>
